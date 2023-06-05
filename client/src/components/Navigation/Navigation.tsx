@@ -9,7 +9,6 @@ function Navigation() {
   const location = useLocation();
   const [showDropdown, setShowDropdown] = useState(false);
   const routes = Object.values(ROUTER_KEYS).filter((route) => route !== location.pathname);
-  console.log(12, location.search);
 
   function capitalizeFirstLetter(str: string) {
     if (str === ROUTER_KEYS.ROOT) {
