@@ -1,0 +1,15 @@
+{
+  "extends": ["react-app", "react-app/jest", "airbnb", "airbnb-typescript"],
+  "ignorePatterns": ["jest.config.js", "coverage"],
+  "plugins": ["@typescript-eslint"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "object-curly-newline": ["error", { "multiline": true, "consistent": true }],
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off",
+    "react/no-array-index-key": "off",
+    "operator-linebreak": "off"
+  }
+}
